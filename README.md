@@ -66,7 +66,7 @@ Install a C++ compiler, OpenCV, and ONNX Runtime using a supported package
 manager or the official binary distributions. Configure the compiler and
 runtime library paths accordingly.
 
-### 1. Install build dependencies
+### 1. Install build dependencies (Linux)
 
 ```bash
 sudo apt update
