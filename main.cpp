@@ -21,7 +21,6 @@ int main(int argc, char** argv)
     constexpr int inputWidth = 512;
     constexpr int inputHeight = 512;
 
-    // ONNX Runtime initialization.
     Ort::Env env(ORT_LOGGING_LEVEL_WARNING, "MODNet");
     Ort::SessionOptions sessionOptions;
     sessionOptions.SetIntraOpNumThreads(4);
@@ -42,8 +41,7 @@ int main(int argc, char** argv)
     cout << "Model input: " << inputName << endl;
     cout << "Model output: " << outputName << endl;
 
-    // Expected MODNet input dimensions: NCHW.
-    vector<int64_t> inputShape = {
+    vector<int64_t> inputShape = { // Expected MODNet input dimensions: NCHW.
         1, 3, inputHeight, inputWidth
     };
 
