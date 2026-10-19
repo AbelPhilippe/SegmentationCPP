@@ -76,3 +76,4 @@ desktop.ini
 # Model weights and downloaded dependencies
 models/*.onnx
 onnxruntime/
+segmentation
